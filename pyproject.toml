@@ -1,0 +1,20 @@
+[project]
+name = "ai-motion-control-tools"
+version = "0.1.0"
+description = "AI motion control tools for Hugging Face workflows"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+motion-tools = "motion_tools.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
